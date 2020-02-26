@@ -35,23 +35,5 @@ class UserManagerService {
         maps["index"] = indexMap
     }
 
-    fun getOrCreateUser(sessionId: String, username: String): UserEntity {
-        return userStorage.computeIfAbsent(sessionId) {
-            session -> UserEntity(session, username)
-        }
-    }
-
-    fun getUser(sessionId: String): UserEntity {
-        return if (userStorage.containsKey(sessionId))
-            userStorage[sessionId]!!
-        else
-            throw RuntimeException("User `$sessionId` was not found!")
-    }
-
-    fun getMapOrDefault(name: String): MapEntity {
-        return maps.getOrDefault(name, maps["index"]!!)
-    }
-
-    fun getAll() = userStorage.values
 
 }

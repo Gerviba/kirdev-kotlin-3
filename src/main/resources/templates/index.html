@@ -39,6 +39,7 @@
 
                 });
 
+                /* [PART2]
                 stompClient.subscribe('/user/topic/positions', function (data) {
                     let positions = JSON.parse(data.body);
 
@@ -51,7 +52,9 @@
                         ctx.fillText(positions.positions[i].name, positions.positions[i].x * 10 + 10, positions.positions[i].y * 10 + 8);
                     }
                 });
+                */
 
+                /* [PART2]
                 stompClient.subscribe('/user/topic/map', function (data) {
                     let mapEntity = JSON.parse(data.body);
 
@@ -71,7 +74,9 @@
                         }
                     }
                 });
+                */
 
+                /* [PART2]
                 setInterval(function() {
                     if (dX !== lastDX || dY !== lastDY) {
                         sendPositionUpdate();
@@ -79,7 +84,9 @@
                         lastDY = dY;
                     }
                 }, 50);
+                */
 
+                /* [PART2]
                 window.onkeydown = function (e) {
                     let code = e.keyCode ? e.keyCode : e.which;
                     if (code === 38) { //UP
@@ -109,8 +116,9 @@
                             dX = 0;
                     }
                 };
+                */
 
-                reloadMap();
+                // [PART2] reloadMap();
             });
 
 
@@ -157,7 +165,7 @@
         <form onsubmit="join(); return false">
             Your username:<br />
             <input type="text" id="username" maxlength="16" autocomplete="off"><br />
-            <input type="submit" value="JOIN"></input>
+            <input type="submit" value="JOIN" />
         </form>
     </div>
     <div class="game">
