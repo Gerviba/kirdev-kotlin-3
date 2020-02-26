@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "ws3.map-dir-name",
+      "type": "java.lang.String",
+      "description": "Description for ws3.map-dir-name."
+  }
+] }

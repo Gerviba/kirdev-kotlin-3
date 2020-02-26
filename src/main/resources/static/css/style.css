@@ -1,0 +1,177 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+object {
+    display: none;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    overflow-x: hidden;
+    background-color: #232526;
+    color: #FFFFFF;
+}
+
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus,
+a {
+    outline: 0 !important;
+    color: #F15A2A;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+}
+
+.game {
+    text-align: center;
+    left: -500px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    margin-left: -345px;
+    border: 1px solid #F15A2A;
+    height: 690px;
+    width: 690px;
+}
+
+.chat-wrapper {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.chat-wrapper .chat {
+    width: 690px;
+    height: 200px;
+    background-color: #00000044;
+    margin: 0 auto;
+}
+
+.login {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 200;
+}
+
+.login form {
+    display: inline-block;
+    width: 200px;
+    border: 2px dashed #F15A2A;
+    margin-top: 200px;
+    padding: 20px;
+    z-index: 200;
+}
+
+input[type="text"] {
+    border: 2px solid #F15A2A;
+    padding: 4px 8px;
+    font-size: 18px;
+    width: calc(100% - 20px);
+    background-color: #00000088;
+}
+
+button,
+input[type="submit"] {
+    background-color: #F15A2A;
+    color: #232526;
+    border: 2px solid #F15A2A;
+    padding: 4px 8px;
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 300;
+    transition: all ease 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    color: #F15A2A;
+    background-color: #232526;
+}
+
+.chat-lines {
+    max-height: 167px;
+    min-height: 167px;
+    overflow-y: scroll;
+    text-align: left;
+    line-height: 1.2;
+    padding: 0 4px;
+}
+
+.chat-lines .tag {
+    color: #A9A9A9;
+}
+
+.chat-lines .name {
+     color: #F15A2A;
+}
+
+.chat-lines .message {
+    font-weight: 300;
+}
+
+.chat-lines .system-message {
+    color: #FFFF00;
+}
+
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f15a2a;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f15a2a;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #f7b19a;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
